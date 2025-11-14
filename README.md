@@ -12,8 +12,7 @@ The model performs:
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# PROCESSING PIPIELINE
-
+# Processing Pipeline
 - 🎧 Input: Audio (.wav) files  
 - 🔄 Resample audio to 22,050 Hz  
 - 🔊 Convert stereo to mono  
