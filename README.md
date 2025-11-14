@@ -102,11 +102,17 @@ nn.Linear(256, num_classes)
 📈 Training Configuration
 
 Loss : CrossEntropyLoss( for multi class classification )
+
 Optimizer	Adam : (lr = 3e-4)
+
 Scheduler :	ReduceLROnPlateau
+
 Batch Size : 32
+
 Epochs : 15
+
 Train/Val Split	: 80/20
+
 Device : GPU if available
 
 During each epoch:
