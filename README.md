@@ -90,8 +90,11 @@ Processed Mel spectrograms saved to cache_mel/ for faster and efficient training
 -> Custom Classification Head :
 # Code snippet
 nn.Linear(in_features, 256)
+
 nn.ReLU()
+
 nn.Dropout(0.3)
+
 nn.Linear(256, num_classes)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
