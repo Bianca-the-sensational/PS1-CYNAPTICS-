@@ -76,11 +76,17 @@ Processed Mel spectrograms saved to cache_mel/ for faster and efficient training
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🧱 Model Architecture
+
 -> Base Model
+
 -> ResNet-34 pretrained on ImageNet( Dataset containing 1000 classes )
+
 -> All layers unfrozen for full fine-tuning( Hybrid mode of fine tuning )
+
 -> Input Adjustment
+
 -> Mel spectrograms are repeated across 3 channels and resized to 224×224.( suitable for ResNet-34 Model )
+
 -> Custom Classification Head :
 # Code snippet
 nn.Linear(in_features, 256)
