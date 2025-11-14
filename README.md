@@ -32,6 +32,7 @@ The model performs:
 
 The dataset inside Google Drive is following this structure:
 
+```
 the-frequency-quest/
  ├── train/
  │     └── train/
@@ -44,6 +45,8 @@ the-frequency-quest/
  │           ├── audio_2.wav
  │           └── ...
  ├── cache_mel/        # Directory has been created to save pre-computed mel spectrograms (efficient execution & faster speed)
+
+```
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  🔧 Preprocessing Details
