@@ -1,4 +1,4 @@
-🧠 Overview
+# 🧠 Overview
 
 The Frequency Quest is an audio classification project that converts .wav audio files into Mel spectrograms and classifies them using a fine-tuned ResNet-34 model.
 This approach treats spectrograms as images, enabling the use of powerful pretrained CNNs for sound recognition.
