@@ -12,7 +12,7 @@ The model performs:
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# PRE - PROCESSING PIPIELINE
+# PROCESSING PIPIELINE
 
 - 🎧 Input: Audio (.wav) files  
 - 🔄 Resample audio to 22,050 Hz  
