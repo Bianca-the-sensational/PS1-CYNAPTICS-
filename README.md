@@ -10,35 +10,21 @@ The model performs:
 4. CNN-based classification
 5. Output generation in submission.csv
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🎧 Processing Pipeline
-Audio (.wav)
-      │
-      ▼
-Resample to 22,050 Hz
-      │
-      ▼
-Stereo To Mono Conversion
-      │
-      ▼
-Mel Spectrogram (64 Mel bins)( defined by n_mels )
-      │
-      ├──► SpecAugment (for training data only)
-      │        • Frequency Masking
-      │        • Time Masking
-      │
-      ▼
-Normalize & Resize (3 × 224 × 224)
-      │
-      ▼
-ResNet-34 (Pretrained on ImageNet)
-      │
-      ▼
-Custom Classifier Head
-      │
-      ▼
-Predicted Class
+# PRE - PROCESSING PIPIELINE
+
+- 🎧 Input: Audio (.wav) files  
+- 🔄 Resample audio to 22,050 Hz  
+- 🔊 Convert stereo to mono  
+- 🎵 Compute Mel Spectrogram (64 Mel bins)  
+- 🛠️ Data augmentation (for training dataset only):  
+  - Frequency masking  
+  - Time masking  
+- 🔄 Normalize and resize to (3 × 224 × 224) to be a suitable input for ResNet-34 
+- 🖼️ Use ResNet-34 pretrained on ImageNet as backbone  
+- 🔧 Custom classifier head  
+- 🏷️ Output: Predicted class label
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
