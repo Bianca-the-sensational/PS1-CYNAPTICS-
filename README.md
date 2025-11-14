@@ -28,7 +28,7 @@ The model performs:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📂 Dataset Structure
+# 📂 Dataset Structure
 
 The dataset inside Google Drive is following this structure:
 
@@ -49,7 +49,7 @@ the-frequency-quest/
 ```
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- 🔧 Preprocessing Details
+# 🔧 Preprocessing Details
 -> Resampling :
 All audio is resampled to 22,050 Hz.
 
@@ -78,7 +78,7 @@ Processed Mel spectrograms saved to cache_mel/ for faster and efficient training
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🧱 Model Architecture
+# 🧱 Model Architecture
 
 -> Base Model
 
@@ -91,7 +91,7 @@ Processed Mel spectrograms saved to cache_mel/ for faster and efficient training
 -> Mel spectrograms are repeated across 3 channels and resized to 224×224.( suitable for ResNet-34 Model )
 
 -> Custom Classification Head :
-# Code snippet
+---Code snippet---
 nn.Linear(in_features, 256)
 
 nn.ReLU()
@@ -102,7 +102,7 @@ nn.Linear(256, num_classes)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-📈 Training Configuration
+# 📈 Training Configuration
 
 Loss : CrossEntropyLoss( for multi class classification )
 
@@ -125,7 +125,7 @@ During each epoch:
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🧪 Testing & Submission Generation
+# 🧪 Testing & Submission Generation
 
 After training:
 1. The best model is loaded
